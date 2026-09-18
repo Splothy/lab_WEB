@@ -1,0 +1,180 @@
+:root {
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-surface: #ffffff;
+  --color-background: #f8fafc;
+  --color-text-main: #0f172a;
+  --color-text-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-accent: #f59e0b;
+  --font-family-base: 'Inter', system-ui, sans-serif;
+  --font-size-base: 16px;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 1.5rem;
+  --font-size-small: 0.875rem;
+  --font-size-price: 3rem;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --border-radius: 12px;
+  --container-width: 1080px;
+}
+
+/* Padding і border входять у задану ширину. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text-main);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--spacing-lg);
+}
+
+.pricing {
+  padding-block: calc(var(--spacing-xl) * 3);
+}
+
+.pricing-header {
+  margin-bottom: calc(var(--spacing-xl) * 2);
+  text-align: center;
+}
+
+.pricing-title {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-h1);
+  line-height: 1.2;
+}
+
+.pricing-description,
+.pricing-period {
+  color: var(--color-text-muted);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.pricing-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  min-width: 0;
+  padding: var(--spacing-xl);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background: var(--color-surface);
+  text-align: center;
+}
+
+/* Однакова специфічність: пізніший модифікатор змінює колір рамки. */
+.pricing-card--featured {
+  border-color: var(--color-primary);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: calc(var(--spacing-sm) / 2) var(--spacing-md);
+  border-radius: var(--border-radius);
+  background: var(--color-accent);
+  font-size: var(--font-size-small);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.pricing-card-title {
+  font-size: var(--font-size-h2);
+}
+
+.pricing-price {
+  font-size: var(--font-size-price);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.pricing-period {
+  display: block;
+  margin-top: var(--spacing-sm);
+  font-size: var(--font-size-small);
+  font-weight: 400;
+}
+
+.pricing-features {
+  display: grid;
+  gap: var(--spacing-sm);
+  margin: 0 0 var(--spacing-sm);
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  margin-top: auto;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.btn:hover {
+  border-color: var(--color-primary-hover);
+  background: var(--color-primary-hover);
+  color: var(--color-surface);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .pricing {
+    padding-block: calc(var(--spacing-xl) * 2);
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+}
