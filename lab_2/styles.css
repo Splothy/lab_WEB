@@ -54,6 +54,44 @@ p {
   padding-block: calc(var(--spacing-xl) * 3);
 }
 
+.breadcrumbs {
+  padding-top: var(--spacing-lg);
+  font-size: var(--font-size-small);
+}
+
+.breadcrumbs-list,
+.breadcrumbs-current {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.breadcrumbs-list {
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs-current {
+  color: var(--color-text-muted);
+}
+
+.breadcrumbs-link {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.breadcrumbs-link:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+.breadcrumbs-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
 .pricing-header {
   margin-bottom: calc(var(--spacing-xl) * 2);
   text-align: center;
