@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font: var(--portal-base) / 1.6 var(--portal-font);
+  color: var(--portal-text);
+}
+
+.lab-placeholder {
+  max-width: 800px;
+  margin-inline: auto;
+  padding: var(--portal-space-xl) var(--portal-space-md);
+}
+
+.lab-placeholder h1 {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  line-height: 1.2;
+}
+
+.lab-placeholder p {
+  color: var(--portal-muted);
+}
