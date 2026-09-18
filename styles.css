@@ -27,8 +27,7 @@ body {
 .page {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(148, 163, 132, 0.08), transparent 10%),
-    var(--page-bg);
+    radial-gradient(circle at top left, rgba(148, 163, 132, 0.08), transparent 10%), var(--page-bg);
 }
 
 .site-header {
@@ -121,6 +120,9 @@ body {
 }
 
 .primary-button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
   background: var(--sage-dark);
   color: var(--cream);
   border: none;
@@ -246,7 +248,7 @@ body {
 
 .site-footer {
   border-top: 1px solid var(--line);
-  padding: 24px 0;
+  padding: 35px 0;
   text-align: center;
   color: var(--muted);
   background: var(--cream);
@@ -256,9 +258,134 @@ body {
   margin: 0;
 }
 
+.nav-links a[aria-current='page'] {
+  color: var(--heading);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--sage-dark);
+  outline-offset: 5px;
+}
+
+.content-section {
+  margin-top: 72px;
+  scroll-margin-top: 24px;
+}
+
+.section-heading {
+  max-width: 650px;
+}
+
+.section-heading h2,
+.contact-banner h2 {
+  margin: 0 0 16px;
+  color: var(--heading);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  line-height: 1.2;
+}
+
+.section-heading p,
+.project-copy p,
+.story-copy p,
+.contact-banner p {
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+.project-grid,
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.project-grid {
+  margin-top: 32px;
+}
+
+.project-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--card);
+}
+
+.project-art {
+  min-height: 230px;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.garden-art {
+  color: var(--cream);
+  background: radial-gradient(ellipse at bottom left, #94a384 0%, transparent 65%), #354b38;
+}
+
+.journal-art {
+  color: #58432f;
+  background: repeating-linear-gradient(0deg, transparent 0 31px, #cbbda6 32px 33px), #e8dfcf;
+  font-style: italic;
+}
+
+.project-copy {
+  padding: 26px;
+}
+
+.project-copy h3 {
+  margin: 0 0 12px;
+  font-size: 1.3rem;
+}
+
+.process-list {
+  list-style: none;
+  padding: 0;
+}
+
+.step-number {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--sage-dark);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.contact-banner {
+  margin-top: 72px;
+  padding: 40px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--sage-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.contact-banner > div {
+  flex: 1 1 400px;
+}
+
+.contact-banner .contact-note {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 0.8rem;
+  overflow-wrap: anywhere;
+}
+
 @media (max-width: 780px) {
   .hero,
-  .info-grid {
+  .info-grid,
+  .project-grid,
+  .story-grid {
     grid-template-columns: 1fr;
   }
 
@@ -270,5 +397,18 @@ body {
   .navbar {
     flex-direction: column;
     gap: 16px;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+
+  .contact-banner {
+    padding: 24px;
+  }
+
+  .content-section,
+  .contact-banner {
+    margin-top: 48px;
   }
 }
