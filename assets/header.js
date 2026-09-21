@@ -1,4 +1,4 @@
-// Resolve the home URL from this file: works locally and under a GitHub Pages repo path.
+
 (() => {
   const homeUrl = new URL('../index.html', document.currentScript.src).href;
   const isHome = document.body.hasAttribute('data-home');

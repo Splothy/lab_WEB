@@ -21,7 +21,6 @@
   --container-width: 1080px;
 }
 
-/* Padding і border входять у задану ширину. */
 *,
 *::before,
 *::after {
@@ -127,7 +126,6 @@ p {
   text-align: left;
 }
 
-/* Однакова специфічність: пізніший модифікатор змінює колір рамки. */
 .pricing-card--featured {
   border-color: var(--color-primary);
 }
