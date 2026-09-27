@@ -1,0 +1,95 @@
+{
+  "lang": "",
+  "title": "FlowTask",
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "FlowTask"
+    },
+    {
+      "tag": "H4",
+      "text": "Why FlowTask?"
+    },
+    {
+      "tag": "H3",
+      "text": "Boards that match your process"
+    },
+    {
+      "tag": "H3",
+      "text": "Automations without scripts"
+    },
+    {
+      "tag": "H3",
+      "text": "Reports that answer questions"
+    },
+    {
+      "tag": "H2",
+      "text": "How it works"
+    },
+    {
+      "tag": "H3",
+      "text": "Import your backlog"
+    },
+    {
+      "tag": "H3",
+      "text": "Shape the board"
+    },
+    {
+      "tag": "H3",
+      "text": "Invite the team"
+    },
+    {
+      "tag": "H2",
+      "text": "Pricing"
+    },
+    {
+      "tag": "H3",
+      "text": "Basic"
+    },
+    {
+      "tag": "H3",
+      "text": "Pro"
+    },
+    {
+      "tag": "H3",
+      "text": "Enterprise"
+    },
+    {
+      "tag": "H2",
+      "text": "What teams say"
+    },
+    {
+      "tag": "H2",
+      "text": "Frequently asked questions"
+    },
+    {
+      "tag": "H2",
+      "text": "Start your free trial"
+    }
+  ],
+  "hero": "<div class=\"button button--primary button--lg\" id=\"hero-cta\">Get started</div>",
+  "faq": [
+    {
+      "html": "<button class=\"faq__q\" type=\"button\" aria-expanded=\"true\">Can I move my data out again?</button>",
+      "answerDisplay": "none"
+    },
+    {
+      "html": "<button class=\"faq__q\" type=\"button\" aria-expanded=\"true\">Do you offer a student plan?</button>",
+      "answerDisplay": "none"
+    },
+    {
+      "html": "<button class=\"faq__q\" type=\"button\" aria-expanded=\"true\">Where is my data stored?</button>",
+      "answerDisplay": "none"
+    },
+    {
+      "html": "<button class=\"faq__q\" type=\"button\" aria-expanded=\"true\">What happens after the trial?</button>",
+      "answerDisplay": "none"
+    }
+  ],
+  "contrast": {
+    "foreground": "rgb(147, 155, 167)",
+    "background": "rgb(255, 255, 255)"
+  },
+  "deadLinks": 15,
+  "scrollWidth": 1425
+}

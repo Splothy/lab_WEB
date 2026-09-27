@@ -1,0 +1,282 @@
+[
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Skip to content",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "See plans",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Product",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Pricing",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "FAQ",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Trial",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "About",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Sign in",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "header-cta",
+    "text": "Get started",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "hero-cta",
+    "text": "Get started",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Learn more about FlowTask",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Learn more about FlowTask",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Learn more about FlowTask",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "See the full plan comparison",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Try Basic",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Try Pro",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Try Enterprise",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "text": "Can I move my data out again?",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "text": "Do you offer a student plan?",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "text": "Where is my data stored?",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "",
+    "text": "What happens after the trial?",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "INPUT",
+    "id": "trial-name",
+    "text": "",
+    "name": "name",
+    "outline": "solid"
+  },
+  {
+    "tag": "INPUT",
+    "id": "trial-email",
+    "text": "",
+    "name": "email",
+    "outline": "solid"
+  },
+  {
+    "tag": "INPUT",
+    "id": "trial-company",
+    "text": "",
+    "name": "company",
+    "outline": "solid"
+  },
+  {
+    "tag": "BUTTON",
+    "id": "trial-submit",
+    "text": "Start free trial",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Features",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Pricing",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "FAQ",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "About",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Careers",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Contact",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Docs",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Changelog",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Status",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "All laboratory work",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "Skip to content",
+    "name": null,
+    "outline": "solid"
+  },
+  {
+    "tag": "A",
+    "id": "",
+    "text": "See plans",
+    "name": null,
+    "outline": "solid"
+  }
+]

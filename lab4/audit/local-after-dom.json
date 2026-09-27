@@ -1,0 +1,111 @@
+{
+  "lang": "en",
+  "title": "FlowTask — project management for teams",
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "FlowTask"
+    },
+    {
+      "tag": "H2",
+      "text": "Why FlowTask?"
+    },
+    {
+      "tag": "H3",
+      "text": "Boards that match your process"
+    },
+    {
+      "tag": "H3",
+      "text": "Automations without scripts"
+    },
+    {
+      "tag": "H3",
+      "text": "Reports that answer questions"
+    },
+    {
+      "tag": "H2",
+      "text": "How it works"
+    },
+    {
+      "tag": "H3",
+      "text": "Import your backlog"
+    },
+    {
+      "tag": "H3",
+      "text": "Shape the board"
+    },
+    {
+      "tag": "H3",
+      "text": "Invite the team"
+    },
+    {
+      "tag": "H2",
+      "text": "Pricing"
+    },
+    {
+      "tag": "H3",
+      "text": "Basic"
+    },
+    {
+      "tag": "H3",
+      "text": "Pro"
+    },
+    {
+      "tag": "H3",
+      "text": "Enterprise"
+    },
+    {
+      "tag": "H2",
+      "text": "What teams say"
+    },
+    {
+      "tag": "H2",
+      "text": "Frequently asked questions"
+    },
+    {
+      "tag": "H3",
+      "text": "\n                \n                  Can I move my data out again?\n                \n              "
+    },
+    {
+      "tag": "H3",
+      "text": "\n                \n                  Do you offer a student plan?\n                \n              "
+    },
+    {
+      "tag": "H3",
+      "text": "\n                \n                  Where is my data stored?\n                \n              "
+    },
+    {
+      "tag": "H3",
+      "text": "\n                \n                  What happens after the trial?\n                \n              "
+    },
+    {
+      "tag": "H2",
+      "text": "Start your free trial"
+    }
+  ],
+  "hero": "<a class=\"button button--primary button--lg\" id=\"hero-cta\" href=\"#trial\">Get started</a>",
+  "faq": [
+    {
+      "html": "<button class=\"faq__q\" type=\"button\" aria-expanded=\"false\" aria-controls=\"answer-1\">\n                  Can I move my data out again?\n                </button>",
+      "answerDisplay": "none"
+    },
+    {
+      "html": "<button class=\"faq__q\" type=\"button\" aria-expanded=\"false\" aria-controls=\"answer-2\">\n                  Do you offer a student plan?\n                </button>",
+      "answerDisplay": "none"
+    },
+    {
+      "html": "<button class=\"faq__q\" type=\"button\" aria-expanded=\"false\" aria-controls=\"answer-3\">\n                  Where is my data stored?\n                </button>",
+      "answerDisplay": "none"
+    },
+    {
+      "html": "<button class=\"faq__q\" type=\"button\" aria-expanded=\"false\" aria-controls=\"answer-4\">\n                  What happens after the trial?\n                </button>",
+      "answerDisplay": "none"
+    }
+  ],
+  "contrast": {
+    "foreground": "rgb(88, 98, 115)",
+    "background": "rgb(255, 255, 255)"
+  },
+  "deadLinks": 0,
+  "scrollWidth": 1425
+}

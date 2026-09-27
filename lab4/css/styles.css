@@ -1,16 +1,15 @@
-/* FlowTask — landing page styles */
-
 @font-face {
-  font-family: "Inter";
-  src: url("../fonts/inter-latin.woff2") format("woff2");
+  font-family: 'Inter';
+  src: url('../fonts/inter-latin.woff2') format('woff2');
   font-weight: 400 700;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
   --ink: #111827;
-  --ink-muted: #939ba7;
-  --ink-soft: #717985;
+  --ink-muted: #586273;
+  --ink-soft: #586273;
   --brand: #4f46e5;
   --brand-dark: #4338ca;
   --brand-tint: #eef2ff;
@@ -30,15 +29,73 @@
 
 body {
   margin: 0;
-  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   font-size: 17px;
   line-height: 1.65;
   color: var(--ink);
   background: var(--surface);
 }
 
-:focus {
-  outline: none;
+:focus-visible {
+  outline: 3px solid #111827;
+  outline-offset: 4px;
+  box-shadow: 0 0 0 4px #fff;
+}
+html {
+  scroll-padding-top: 100px;
+}
+.skip-link {
+  position: fixed;
+  left: 12px;
+  top: 12px;
+  z-index: 100;
+  padding: 12px 20px;
+  background: white;
+  color: #111827;
+  transform: translateY(-200%);
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+.nav-item {
+  text-decoration: none;
+}
+.faq__heading {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+[hidden] {
+  display: none;
+}
+.trial__field {
+  flex: 1 1 210px;
+  max-width: 260px;
+  text-align: left;
+}
+.trial__field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+.trial__form {
+  align-items: end;
+}
+.trial__field .trial__input {
+  width: 100%;
+  color: var(--ink);
+  background: var(--surface);
+}
+#trial-error,
+#trial-status {
+  margin-top: 16px;
+}
+#trial-error:empty,
+#trial-status:empty {
+  margin: 0;
+}
+#trial-note {
+  font-size: 14px;
 }
 
 img {
@@ -108,8 +165,6 @@ a {
   margin-bottom: 40px;
 }
 
-/* Header */
-
 .site-header {
   position: sticky;
   top: 0;
@@ -163,8 +218,6 @@ a {
   color: var(--brand);
 }
 
-/* Buttons — .btn is the real element, .button is the styled box */
-
 .btn,
 .button {
   display: inline-block;
@@ -211,8 +264,6 @@ a {
   font-size: 17px;
 }
 
-/* Promo banner */
-
 .promo {
   background: var(--brand-tint);
   border-bottom: 1px solid #dfe3f8;
@@ -225,8 +276,6 @@ a {
   display: block;
   font-size: 19px;
 }
-
-/* Hero */
 
 .hero {
   padding: 72px 0 64px;
@@ -255,8 +304,6 @@ a {
   box-shadow: 0 24px 60px rgba(17, 24, 39, 0.16);
 }
 
-/* Cards */
-
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -280,8 +327,6 @@ a {
   text-decoration: none;
 }
 
-/* Steps */
-
 .step__num {
   display: inline-flex;
   align-items: center;
@@ -294,8 +339,6 @@ a {
   color: var(--brand);
   font-weight: 700;
 }
-
-/* Pricing */
 
 .plan {
   display: flex;
@@ -339,8 +382,6 @@ a {
   margin-top: auto;
 }
 
-/* Testimonials */
-
 .quote {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -372,8 +413,6 @@ a {
   color: var(--ink-muted);
 }
 
-/* FAQ */
-
 .faq {
   max-width: 760px;
 }
@@ -394,16 +433,9 @@ a {
 }
 
 .faq__a {
-  display: none;
   padding-bottom: 20px;
   color: #374151;
 }
-
-.faq__item.is-open .faq__a {
-  display: block;
-}
-
-/* Trial form */
 
 .trial {
   background: var(--brand);
@@ -439,8 +471,6 @@ a {
   font: inherit;
   font-size: 15px;
 }
-
-/* Footer */
 
 .site-footer {
   padding: 56px 0 40px;
@@ -489,8 +519,10 @@ a {
 
 .social a {
   display: inline-flex;
-  width: 18px;
-  height: 18px;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
 }
 
 .legal {
@@ -501,7 +533,9 @@ a {
   font-size: 14px;
 }
 
-/* About page */
+.legal a {
+  text-decoration: underline;
+}
 
 .page-head {
   padding: 64px 0 24px;
@@ -514,152 +548,6 @@ a {
 .prose h2 {
   margin-top: 40px;
 }
-
-/* Shared UI kit — carried over from the FlowTask app shell */
-
-.dashboard {
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  min-height: 100vh;
-  background: var(--surface-alt);
-}
-
-.dashboard__sidebar {
-  padding: 24px 18px;
-  background: #0f172a;
-  color: #cbd5f5;
-}
-
-.dashboard__nav-link {
-  display: block;
-  padding: 9px 12px;
-  border-radius: 8px;
-  color: #cbd5f5;
-  text-decoration: none;
-}
-
-.dashboard__nav-link.is-active {
-  background: rgba(79, 70, 229, 0.24);
-  color: #ffffff;
-}
-
-.dashboard__topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 64px;
-  padding: 0 24px;
-  background: var(--surface);
-  border-bottom: 1px solid var(--line);
-}
-
-.board {
-  display: flex;
-  gap: 16px;
-  padding: 24px;
-  overflow-x: auto;
-}
-
-.board__column {
-  flex: 0 0 280px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 14px;
-}
-
-.board__card {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 12px;
-  margin-bottom: 10px;
-  box-shadow: 0 1px 2px rgba(17, 24, 39, 0.06);
-}
-
-.board__card--urgent {
-  border-left: 3px solid #ef4444;
-}
-
-.tag {
-  display: inline-block;
-  padding: 2px 9px;
-  border-radius: 999px;
-  background: var(--brand-tint);
-  color: var(--brand-dark);
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.tag--done {
-  background: #dcfce7;
-  color: #166534;
-}
-
-.tag--blocked {
-  background: #fee2e2;
-  color: #991b1b;
-}
-
-.avatar-stack {
-  display: flex;
-}
-
-.avatar-stack img {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: 2px solid var(--surface);
-  margin-left: -8px;
-}
-
-.modal {
-  position: fixed;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  background: rgba(15, 23, 42, 0.5);
-}
-
-.modal__panel {
-  width: min(560px, 92vw);
-  background: var(--surface);
-  border-radius: 16px;
-  padding: 28px;
-}
-
-.toast {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  padding: 14px 18px;
-  border-radius: 12px;
-  background: #0f172a;
-  color: #ffffff;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.32);
-}
-
-.table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 15px;
-}
-
-.table th,
-.table td {
-  padding: 10px 12px;
-  border-bottom: 1px solid var(--line);
-  text-align: left;
-}
-
-.table thead th {
-  background: var(--surface-alt);
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-/* Responsive */
 
 @media (max-width: 900px) {
   .hero__grid,
@@ -676,8 +564,30 @@ a {
     font-size: 26px;
   }
 
+  .site-header {
+    position: static;
+    height: auto;
+  }
+  .site-header__inner {
+    height: auto;
+    flex-wrap: wrap;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    gap: 16px;
+  }
   .nav {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    order: 2;
+    gap: 12px 24px;
+  }
+  .site-header__actions {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  html {
+    scroll-padding-top: 16px;
   }
 
   .trial {

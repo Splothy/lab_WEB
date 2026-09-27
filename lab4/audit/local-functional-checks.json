@@ -1,0 +1,143 @@
+[
+  {
+    "page": "",
+    "violations": [],
+    "structure": {
+      "h1": 1,
+      "duplicateIds": [],
+      "brokenLocalAnchors": [],
+      "canonical": "https://lab-web-mztzflowtask-lab4.vercel.app/",
+      "og": "https://lab-web-mztzflowtask-lab4.vercel.app/",
+      "labels": [
+        {
+          "id": "trial-name",
+          "labels": 1
+        },
+        {
+          "id": "trial-email",
+          "labels": 1
+        },
+        {
+          "id": "trial-company",
+          "labels": 1
+        }
+      ],
+      "json": {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "FlowTask",
+        "description": "Project management for teams that ship every week.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "url": "https://lab-web-mztzflowtask-lab4.vercel.app/",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Basic",
+            "price": "10.00",
+            "priceCurrency": "USD",
+            "description": "Monthly, per workspace.",
+            "url": "https://lab-web-mztzflowtask-lab4.vercel.app/#pricing"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro",
+            "price": "29.00",
+            "priceCurrency": "USD",
+            "description": "Monthly, per workspace.",
+            "url": "https://lab-web-mztzflowtask-lab4.vercel.app/#pricing"
+          },
+          {
+            "@type": "Offer",
+            "name": "Enterprise",
+            "price": "99.00",
+            "priceCurrency": "USD",
+            "description": "Monthly, per workspace.",
+            "url": "https://lab-web-mztzflowtask-lab4.vercel.app/#pricing"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "key": "Enter",
+    "state": {
+      "expanded": "true",
+      "hidden": false
+    }
+  },
+  {
+    "key": " ",
+    "state": {
+      "expanded": "false",
+      "hidden": true
+    }
+  },
+  {
+    "invalid": {
+      "invalid": "true",
+      "error": "Enter a valid work email, for example name@example.com.",
+      "status": ""
+    }
+  },
+  {
+    "valid": {
+      "status": "Demo completed. No data was sent and no account was created.",
+      "email": "student@example.com",
+      "url": "http://127.0.0.1:8765/"
+    }
+  },
+  {
+    "page": "",
+    "width": 320,
+    "overflow": false
+  },
+  {
+    "page": "",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "page": "",
+    "width": 768,
+    "overflow": false
+  },
+  {
+    "page": "",
+    "width": 1440,
+    "overflow": false
+  },
+  {
+    "page": "about.html",
+    "violations": [],
+    "structure": {
+      "h1": 1,
+      "duplicateIds": [],
+      "brokenLocalAnchors": [],
+      "canonical": "https://lab-web-mztzflowtask-lab4.vercel.app/about.html",
+      "og": "https://lab-web-mztzflowtask-lab4.vercel.app/about.html",
+      "labels": [],
+      "json": null
+    }
+  },
+  {
+    "page": "about.html",
+    "width": 320,
+    "overflow": false
+  },
+  {
+    "page": "about.html",
+    "width": 390,
+    "overflow": false
+  },
+  {
+    "page": "about.html",
+    "width": 768,
+    "overflow": false
+  },
+  {
+    "page": "about.html",
+    "width": 1440,
+    "overflow": false
+  }
+]
