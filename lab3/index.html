@@ -3,16 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Лабораторна робота 3 — КН-311</title>
-    <link rel="stylesheet" href="../assets/header.css" />
+    <title>Тарифи Basic, Pro та Enterprise — порівняння планів</title>
+    <meta
+      name="description"
+      content="Порівняйте Basic за $10, Pro за $29 та Enterprise за $99 на місяць: кількість користувачів, обсяг сховища та підтримка. Навчальний макет тарифів."
+    />
+    <link rel="canonical" href="https://splothy.github.io/lab_WEB/lab3/" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="../assets/header.js" defer></script>
   </head>
-  <body class="lab-page">
-    <main class="lab-placeholder">
-      <p>Веброзробка · КН-311</p>
-      <h1>Лабораторна робота 3</h1>
-      <p>Роботу ще не додано.</p>
+  <body>
+    <header>
+      <nav class="container breadcrumbs" aria-label="Навігаційний шлях">
+        <ol class="breadcrumbs-list">
+          <li><a class="breadcrumbs-link" href="../index.html">Головна</a></li>
+          <li class="breadcrumbs-current">
+            <span aria-hidden="true">/</span>
+            <a class="breadcrumbs-link" href="../lab_2/index.html">Лабораторна 2</a>
+          </li>
+          <li class="breadcrumbs-current">
+            <span aria-hidden="true">/</span><span aria-current="page">Лабораторна 3</span>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <div class="pricing">
+        <div class="container">
+          <header class="pricing-header">
+            <h1 class="pricing-title" id="pricing-title">Порівняйте тарифи для роботи з даними</h1>
+            <p class="pricing-description">
+              Оберіть Basic, Pro або Enterprise за кількістю користувачів, обсягом сховища та рівнем
+              підтримки.
+            </p>
+          </header>
+          <section aria-labelledby="plans-title">
+            <h2 class="section-title" id="plans-title">Тарифні плани</h2>
+            <div class="pricing-grid">
+              <article class="pricing-card" aria-labelledby="basic-title" lang="en">
+                <h3 class="pricing-card-title" id="basic-title">Basic</h3>
+                <p class="pricing-price">$10 <span class="pricing-period">/ month</span></p>
+                <ul class="pricing-features">
+                  <li>1 User</li>
+                  <li>5GB Storage</li>
+                  <li>Basic Support</li>
+                </ul>
+                <a class="btn btn-outline" href="#basic-details">Explore Basic</a>
+              </article>
+              <article
+                class="pricing-card pricing-card--featured"
+                aria-labelledby="pro-title"
+                lang="en"
+              >
+                <span class="pricing-badge">PRO • ACTIVE</span>
+                <h3 class="pricing-card-title" id="pro-title">Pro</h3>
+                <p class="pricing-price">$29 <span class="pricing-period">/ month</span></p>
+                <ul class="pricing-features">
+                  <li>5 Users</li>
+                  <li>50GB Storage</li>
+                  <li>Priority Support</li>
+                </ul>
+                <a class="btn btn-primary" href="#pro-details">Explore Pro</a>
+              </article>
+              <article class="pricing-card" aria-labelledby="enterprise-title" lang="en">
+                <h3 class="pricing-card-title" id="enterprise-title">Enterprise</h3>
+                <p class="pricing-price">$99 <span class="pricing-period">/ month</span></p>
+                <ul class="pricing-features">
+                  <li>Unlimited</li>
+                  <li>1TB Storage</li>
+                  <li>24/7 Support</li>
+                </ul>
+                <a class="btn btn-outline" href="#enterprise-details">Explore Enterprise</a>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+      <section class="container plan-details" aria-labelledby="details-title">
+        <h2 class="section-title" id="details-title">Як відрізняються тарифи</h2>
+        <div class="details-grid">
+          <article id="basic-details" tabindex="-1">
+            <h3>Basic: для одного користувача</h3>
+            <p>
+              План коштує $10 на місяць і передбачає одного користувача, 5 ГБ сховища та базову
+              підтримку.
+            </p>
+          </article>
+          <article id="pro-details" tabindex="-1">
+            <h3>Pro: для команди до п’яти користувачів</h3>
+            <p>
+              За $29 на місяць доступні п’ять користувачів, 50 ГБ сховища та пріоритетна підтримка.
+            </p>
+          </article>
+          <article id="enterprise-details" tabindex="-1">
+            <h3>Enterprise: без обмеження кількості користувачів</h3>
+            <p>
+              За $99 на місяць план передбачає необмежену кількість користувачів, 1 ТБ сховища та
+              підтримку цілодобово.
+            </p>
+          </article>
+        </div>
+        <button class="btn btn-outline help-button" type="button" popovertarget="plan-help">
+          Підказка щодо вибору тарифу
+        </button>
+        <div class="plan-help" id="plan-help" popover>
+          <p>
+            Спочатку визначте кількість користувачів, потім потрібний обсяг сховища та рівень
+            підтримки. Порівняйте ці потреби з умовами трьох тарифів.
+          </p>
+          <button
+            class="btn btn-outline"
+            type="button"
+            popovertarget="plan-help"
+            popovertargetaction="hide"
+          >
+            Закрити підказку
+          </button>
+        </div>
+      </section>
     </main>
+    <footer class="container page-footer">
+      <p>Навчальний макет. Підключення тарифів та оплата не здійснюються.</p>
+      <p>Ковальчук Ярослав Олегович · КН-311</p>
+      <a class="breadcrumbs-link" href="../lab_2/index.html"
+        >Переглянути початкову версію — лабораторну 2</a
+      >
+    </footer>
   </body>
 </html>

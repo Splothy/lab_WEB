@@ -1,2 +1,60 @@
-/* Додавайте стилі лабораторної тут. */
-@import url('../assets/placeholder.css');
+﻿@import url('../lab_2/styles.css');
+
+h3 {
+  margin: 0;
+}
+
+.section-title {
+  margin-bottom: var(--spacing-xl);
+  font-size: var(--font-size-h2);
+}
+
+.btn {
+  text-align: center;
+  text-decoration: none;
+}
+
+.plan-details {
+  padding-bottom: calc(var(--spacing-xl) * 2);
+}
+
+.details-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+}
+
+.details-grid article {
+  scroll-margin-top: var(--spacing-lg);
+}
+
+.details-grid h3 {
+  margin-bottom: var(--spacing-sm);
+  font-size: var(--font-size-base);
+}
+
+.help-button {
+  width: auto;
+  margin-top: var(--spacing-lg);
+}
+
+.plan-help {
+  max-width: min(480px, calc(100% - var(--spacing-xl)));
+  padding: var(--spacing-lg);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  background: var(--color-surface);
+  color: inherit;
+}
+
+.plan-help .btn {
+  margin-top: var(--spacing-md);
+}
+
+.page-footer {
+  display: grid;
+  gap: var(--spacing-sm);
+  padding-block: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: var(--font-size-small);
+}
